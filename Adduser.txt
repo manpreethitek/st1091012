@@ -16,14 +16,8 @@
 
 '' 02/20/2019  rw	Created for LoanApp 2.1
 
-
-
-
-
 ''*****************************************
 ''SCRIPT
-
-
 
 ''Invalid input - missing Username
 AddUser "", "password", "kon", "Smith", "ABC", "416-456-0000", "ksmith@sample.com"
@@ -33,6 +27,9 @@ AddUser "ynmith", "", "Ron", "Smith", "ABC", "416-456-0000", "ysmith@sample.com"
 
 ''Invalid input - user already exists
 AddUser "dsmith", "password", "Peter", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
+
+''Invalid input - invalid email
+AddUser "jsmith", "password", "John", "Smith", "ABC", "416-456-0000", "jsmithsample.com"
 
 ''Valid input
 AddUser "jsmith", "password", "John", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
